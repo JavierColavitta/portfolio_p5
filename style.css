@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lavender;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Menú o Barra de navegación */
+
+nav a {
+    text-transform: uppercase;
+}
+
+/* Encabezado */
+
+.encabezado {
+    background: #4e54c8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil {
+    width: 25%;
+    margin-top: 80px;
+}
+
+.encabezado h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.encabezado p {
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Container general */
+
+.container {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sección de Portfolio */
+
+.hport {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.portfolio img {
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.portfolio h3 {
+    color: #4e54c8;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.portfolio-hover {
+    position: relative;
+}
+
+.portfolio-hover {
+    max-width: 100%;
+    transition: transform 1s;
+}
+
+.portfolio-hover:hover {
+    transform: scale(1.1);
+}
+
+/* Sección Acerca de mí */
+
+.acerca hr {
+    width: 60%;
+    height: 2px;
+    background: #4e54c8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contacto .container .form-group input {
+    border-radius: 20px;
+}
+
+.contacto .container .form-group textarea {
+    border-radius: 20px;
+}
+
+/* Sección Contacto */
+
+.btn {
+    width: 20%;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: #4e54c8;
+}
+
+/* Footer */
+.container-footer {
+    text-align: center;
+}
+
+footer {
+    background-color: #4e54c8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    border-radius: 5px 5px 0px 0px;
+}
+
+footer .row {
+    padding: 100px 0;
+}
+
+.redes-sociales i {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.redes-sociales i:hover {
+    background: #212529;
+    color: #fff;
+}
+
+footer h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Derechos de autor */
+
+.derechos {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Header Responsive */
+
+@media only screen and (max-width: 768px) {
+    .perfil {
+        width: 38%;
+        margin-top: 85px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .encabezado h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .encabezado p {
+        color: white;
+        font-weight: bolder;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .perfil {
+        width: 28%;
+        margin-top: 90px;
+    }
+}
+
+/* Portfolio Responsive */
+@media only screen and (max-width: 500px) {
+    .hport {
+        font-size: 1.5rem;
+    }
+
+    .portfolio h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Footer Responsive */
+@media only screen and (max-width: 500px) {
+    footer h3 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
